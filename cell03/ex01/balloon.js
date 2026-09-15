@@ -22,7 +22,7 @@ balloon.addEventListener("click", function () {
 });
 
 balloon.addEventListener("mouseleave", function () {
-    /* ลดขนาด แต่ห้ามต่ำกว่า 200px */
+    
     if (size > 200) {
         size = size - 5;
     }

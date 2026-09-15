@@ -37,7 +37,6 @@ table {
     border-spacing: 0 15px;
 }
 
-/* ทำให้มองไม่เห็นเส้นตาราง */
 table, tr, td {
     border: none;
 }
