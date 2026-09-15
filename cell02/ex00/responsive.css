@@ -1,0 +1,26 @@
+html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* ล็อกสัดส่วนช่องให้หด-ขยายอย่างสมดุล */
+}
+td {
+    border: 1px solid black;
+    width: 50%;
+    padding: 10px;
+    vertical-align: middle;
+    word-break: break-word; /* ป้องกันข้อความยาวดันตารางล้นจอเมื่อย่อหน้าต่าง */
+}
+.first-cell {
+    background-color: #b8c477;
+}
+.second-cell {
+    background-color: #f7bfab;
+}
