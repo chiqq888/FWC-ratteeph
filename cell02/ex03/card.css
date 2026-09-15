@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    width: 320px;
+
+    background-color: white;
+    text-align: center;
+
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+#profile {
+    padding: 10px;
+    font-size: 14px;
+}
+
+table {
+    width: 100%;
+    padding: 25px;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+/* ทำให้มองไม่เห็นเส้นตาราง */
+table,
+tr,
+td {
+    border: none;
+}
+
+.profile-image {
+    width: 130px;
+    height: 130px;
+
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    color: gray;
+}
+
+.social img {
+    width: 25px;
+    height: 25px;
+    margin: 0 8px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+
+    color: white;
+    background-color: black;
+
+    border: none;
+    cursor: pointer;
+
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: gray;
+}
