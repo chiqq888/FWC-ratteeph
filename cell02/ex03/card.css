@@ -38,9 +38,7 @@ table {
 }
 
 /* ทำให้มองไม่เห็นเส้นตาราง */
-table,
-tr,
-td {
+table, tr, td {
     border: none;
 }
 
