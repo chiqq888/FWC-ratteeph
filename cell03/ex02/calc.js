@@ -10,7 +10,6 @@ calculator.addEventListener("submit", function (event) {
     const leftNumber = Number(leftText);
     const rightNumber = Number(rightText);
 
-    /* ตรวจว่ากรอกข้อมูลและเป็นจำนวนเต็มตั้งแต่ 0 ขึ้นไป */
     if (
         leftText.trim() === "" ||
         rightText.trim() === "" ||
@@ -25,7 +24,6 @@ calculator.addEventListener("submit", function (event) {
         return;
     }
 
-    /* ห้ามหารหรือ Modulo ด้วย 0 */
     if (
         (operator === "/" || operator === "%") &&
         rightNumber === 0
@@ -47,7 +45,7 @@ calculator.addEventListener("submit", function (event) {
 
     } else if (operator === "/") {
         result = leftNumber / rightNumber;
-        
+
     } else if (operator === "%") {
         result = leftNumber % rightNumber;
     }
@@ -57,7 +55,6 @@ calculator.addEventListener("submit", function (event) {
 });
 
 
-/* แจ้งเตือนทุก 30 วินาที */
 setInterval(function () {
     alert("Please, use me...");
 }, 30000);
