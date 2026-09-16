@@ -6,6 +6,7 @@ const colors = ["red", "green", "blue"];
 let colorIndex = 0;
 
 balloon.addEventListener("click", function () {
+    
     size = size + 10;
 
     if (size > 420) {
@@ -22,7 +23,7 @@ balloon.addEventListener("click", function () {
 });
 
 balloon.addEventListener("mouseleave", function () {
-    
+
     if (size > 200) {
         size = size - 5;
     }
