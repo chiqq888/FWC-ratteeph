@@ -5,7 +5,7 @@ $(function () {
         const blue = Math.floor(Math.random() * 256);
 
         const randomColor = "rgb(" + red + ", " + green + ", " + blue + ")";
-
+  
         $("body").css("background-color", randomColor);
     });
 });
