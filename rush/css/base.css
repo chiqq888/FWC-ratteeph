@@ -1,5 +1,5 @@
 :root {
---background: #ffffff;
+  --background: #ffffff;
   --foreground: #000000;
   --muted: #f4f4f4;
   --border: 2px solid #000000;
@@ -11,15 +11,15 @@
 }
 
 * {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html {
-scroll-behavior: smooth;
+main {
+  scroll-behavior: smooth;
 }
 
 body {
-margin: 0;
+  margin: 0;
   overflow-x: hidden;
   color: var(--foreground);
   background: var(--background);
@@ -29,21 +29,21 @@ margin: 0;
 }
 
 ::selection {
-color: #fff;
+  color: #fff;
   background: #000;
 }
 
 a {
-color: inherit;
+  color: inherit;
 }
 
 img {
-display: block;
+  display: block;
   max-width: 100%;
 }
 
 svg {
-fill: none;
+  fill: none;
   stroke: currentColor;
   stroke-width: 1.8;
   stroke-linecap: square;
@@ -51,13 +51,13 @@ fill: none;
 }
 
 :focus-visible {
-outline: 3px solid #000;
+  outline: 3px solid #000;
   outline-offset: 4px;
 }
 
 .landing-page,
 .portfolio-page {
-height: 100vh;
+  height: 100vh;
   height: 100dvh;
   display: grid;
   grid-template-rows: auto minmax(0, 1fr) auto;
@@ -66,36 +66,35 @@ height: 100vh;
 
 .portfolio-page > .landing-header,
 .portfolio-page > .landing-footer {
-position: relative;
+  position: relative;
   z-index: 120;
-  flex: none;
   background: var(--background);
 }
 
 .portfolio-page > .landing-header {
-border-bottom: var(--thin-border);
+  border-bottom: var(--thin-border);
 }
 
 .landing-index,
 .portfolio-page > main {
-scrollbar-width: thin;
+  scrollbar-width: thin;
   scrollbar-color: #000 #fff;
 }
 
 .landing-index::-webkit-scrollbar,
 .portfolio-page > main::-webkit-scrollbar {
-width: 12px;
+  width: 12px;
 }
 
 .landing-index::-webkit-scrollbar-track,
 .portfolio-page > main::-webkit-scrollbar-track {
-background: #fff;
+  background: #fff;
   border-left: 1px solid #000;
 }
 
 .landing-index::-webkit-scrollbar-thumb,
 .portfolio-page > main::-webkit-scrollbar-thumb {
-min-height: 48px;
+  min-height: 48px;
   background: #000;
   border: 3px solid #fff;
   border-radius: 0;
@@ -103,11 +102,11 @@ min-height: 48px;
 
 .landing-index::-webkit-scrollbar-button,
 .portfolio-page > main::-webkit-scrollbar-button {
-display: none;
+  display: none;
 }
 
 .landing-header {
-height: var(--chrome-height);
+  height: var(--chrome-height);
   min-height: var(--chrome-height);
   padding: 0 clamp(1.25rem, 2vw, 2.5rem);
   display: flex;
@@ -115,26 +114,27 @@ height: var(--chrome-height);
   justify-content: space-between;
   gap: 1rem;
   font-size: 12px;
+  line-height: 18px;
   font-weight: 700;
 }
 
 .landing-header p {
-margin: 0;
+  margin: 0;
 }
 
 .landing-logo {
-font-size: 20px;
+  font-size: 20px;
   line-height: 20px;
   letter-spacing: -1px;
   text-decoration: none;
 }
 
 .landing-logo span {
-color: #8b8b8b;
+  color: #8b8b8b;
 }
 
 .landing-footer {
-height: var(--chrome-height);
+  height: var(--chrome-height);
   min-height: var(--chrome-height);
   display: flex;
   align-items: center;
@@ -143,81 +143,56 @@ height: var(--chrome-height);
   padding: 0 clamp(1.25rem, 2vw, 2.5rem);
   border-top: var(--thin-border);
   font-size: 11px;
+  line-height: 18px;
   font-weight: 600;
   letter-spacing: 0.05em;
 }
 
 @media (max-width: 720px) {
-  body {
-  padding-bottom: 4.5rem;
-  }
-  
   .landing-header {
-  padding: 0 1rem;
+    padding: 0 1rem;
   }
-  
+
   .landing-footer {
-  padding: 0 1rem;
+    padding: 0 1rem;
   }
-  
+
   .landing-footer span:last-child {
-  display: none;
+    display: none;
   }
 }
 
 @media (max-width: 390px) {
   .landing-header p {
-  display: none;
+    display: none;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html {
-  scroll-behavior: auto;
+  main {
+    scroll-behavior: auto;
   }
-  
+
   *,
-    *::before,
-    *::after {
-  transition: none !important;
+  *::before,
+  *::after {
+    transition: none !important;
   }
 }
 
 @media print {
   nav {
-  display: none;
+    display: none;
   }
-  
+
   body {
-  color: #000;
-      background: #fff;
-      padding: 0;
+    color: #000;
+    background: #fff;
+    padding: 0;
   }
-  
+
   section,
-    article {
-  break-inside: avoid;
+  article {
+    break-inside: avoid;
   }
-}
-
-body {
-font-size: 16px;
-  line-height: 26px;
-}
-
-.utility-bar,
-.landing-header {
-font-size: 12px;
-  line-height: 18px;
-}
-
-.landing-logo {
-font-size: 20px;
-  line-height: 20px;
-}
-
-.landing-footer,
-.portfolio-footer {
-font-size: 11px;
-  line-height: 18px;
 }
